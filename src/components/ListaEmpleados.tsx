@@ -103,6 +103,14 @@ export default function ListaEmpleados() {
                 <td className='py-3 px-6 text-right font-medium text-gray-700'>
                   {formatoMoneda(empleado.attributes.salary)}
                 </td>
+                <td className='py-3 px-6 text-center'>
+                  <button
+                    onClick={() => {}}
+                    className='bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all'
+                  >
+                    Ver Detalles
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -140,6 +148,7 @@ export default function ListaEmpleados() {
           Siguiente
         </button>
       </div>
+      {/* Modal de detalles salariales */}
     </div>
   )
 }
